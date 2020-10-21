@@ -77,7 +77,7 @@
                                     <constraint firstAttribute="width" secondItem="y9i-Wt-LNx" secondAttribute="height" multiplier="414:775" id="iva-Pa-BfR"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="190" id="cyf-TP-vgn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="190" id="cyf-TP-vgn" customClass="ViewMovieListCell" customModule="MovieApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cyf-TP-vgn" id="bIT-bg-1I8">
@@ -126,6 +126,12 @@
                                                 <constraint firstItem="h6N-Ml-cD3" firstAttribute="top" secondItem="bIT-bg-1I8" secondAttribute="top" constant="11" id="wxH-Hp-zX7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mvDate" destination="bbP-OX-w0i" id="UEf-XY-lxB"/>
+                                            <outlet property="mvDes" destination="VYu-ug-q5a" id="PEX-Oq-Aqx"/>
+                                            <outlet property="mvName" destination="h6N-Ml-cD3" id="CUF-fP-ZwX"/>
+                                            <outlet property="mvPoster" destination="QCP-yl-tAp" id="zaM-n2-UsX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

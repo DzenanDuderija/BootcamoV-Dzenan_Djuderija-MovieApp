@@ -7,6 +7,8 @@
 
 import UIKit
 
+//More cleaner code separeted class for cell
+
 class MovieCellTableViewCell: UITableViewCell {
     
     static let identifier = "MovieCellTableViewCell"

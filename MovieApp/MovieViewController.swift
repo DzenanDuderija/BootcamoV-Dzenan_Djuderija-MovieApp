@@ -16,15 +16,15 @@ class ViewMovieListCell: UITableViewCell{
 
 class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-   private let tableView: UITableView = {
+  /* private let tableView: UITableView = {
         let table = UITableView()
         
         table.register(MovieCellTableViewCell.self, forCellReuseIdentifier: MovieCellTableViewCell.identifier)
         
         return table
-    }()
+    }()*/
     
-    let poster: [UIImage] = [ UIImage(named: "PosterAndroid")!,]
+    let poster: [UIImage] = [ UIImage(named: "PosterAndroid")!,]//manualy loading imag to see it on app later adding full poster url 
     
     // hold movie name for search
     var mvName : [String] = []
@@ -32,16 +32,12 @@ class MovieViewController: UIViewController, UITableViewDelegate, UITableViewDat
     let movieList = [Movie]()
 
     @IBOutlet weak var table : UITableView!
-    //@IBOutlet weak var movieName: UILabel!
-    //@IBOutlet weak var movieDate: UILabel!
-    //@IBOutlet weak var movieDescription: UILabel!
-    //@IBOutlet weak var moviePoster: UIImageView!
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
-        tableView.delegate = self
-        tableView.dataSource = self
+        //view.addSubview(tableView)
+        //tableView.delegate = self
+        //tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
